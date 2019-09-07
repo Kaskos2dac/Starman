@@ -41,7 +41,7 @@ $(document).ready(function () { //esperando al leer el documento
     var interpolacion = new TimelineMax()
         .add(TweenMax.to($("#ovni"), 1.2, { css: { bezier: rutaDelAvion.entry }, ease: Power1.easeInOut }))
         .add(TweenMax.to($("#ovni"), 2, { css: { bezier: rutaDelAvion.looping }, ease: Power1.easeInOut }))
-        .add(TweenMax.to($("#ovni"), 1, { css: { bezier: rutaDelAvion.leave }, ease: Power1.easeInOut }));
+        .add(TweenMax.to($("#ovni"), 2.1, { css: { bezier: rutaDelAvion.leave }, ease: Power1.easeInOut }));
     
     //construyendo la escena 
     var escena = new ScrollMagic.Scene({ 
