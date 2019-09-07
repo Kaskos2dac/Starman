@@ -1,5 +1,5 @@
 $(document).ready(function () { //esperando al leer el documento
-    var rutaDelAvion = {
+    var rutaDelCarro = {
         entry  : {
             curviness: 1.25,
             autoRotate: true,
@@ -39,9 +39,9 @@ $(document).ready(function () { //esperando al leer el documento
     //vamos a crear la interpolación
 
     var interpolacion = new TimelineMax()
-        .add(TweenMax.to($("#ovni"), 1.2, { css: { bezier: rutaDelAvion.entry }, ease: Power1.easeInOut }))
-        .add(TweenMax.to($("#ovni"), 2, { css: { bezier: rutaDelAvion.looping }, ease: Power1.easeInOut }))
-        .add(TweenMax.to($("#ovni"), 2.1, { css: { bezier: rutaDelAvion.leave }, ease: Power1.easeInOut }));
+        .add(TweenMax.to($("#car"), 1.2, { css: { bezier: rutaDelCarro.entry }, ease: Power1.easeInOut }))
+        .add(TweenMax.to($("#car"), 2, { css: { bezier: rutaDelCarro.looping }, ease: Power1.easeInOut }))
+        .add(TweenMax.to($("#car"), 2.1, { css: { bezier: rutaDelCarro.leave }, ease: Power1.easeInOut }));
     
     //construyendo la escena 
     var escena = new ScrollMagic.Scene({ 
