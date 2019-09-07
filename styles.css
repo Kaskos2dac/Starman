@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    background-image: url("earth\ with\ moon.png");
+    background-position: center;
+    background-size: cover;
+}
+#ovni {
+    width: 250px;
+}
+#bezier {
+    overflow: hidden;
+    position: relative;
+    
+}
+.separador1 {
+    min-height: 200px;
+}
+.separador2 {
+    min-height: 1px;
+}
+.info {
+    color: white;
+    position: fixed;
+    top: 0;
+    
+}
+.container-info{
+    width: 600px;
+    margin: 0px 10px 5px 700px;
+}
+.container-info h1{
+    font-family: 'Righteous', cursive;
+    font-size: 25px;
+}
+.container-info p{
+    font-family: monospace;
+    font-size: 23px;
+}
